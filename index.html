@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+    <p>Enter your Text or URL</p>
+    <input type="text" placeholder="Text or URL" class="qrline">
+    <br>
+    
+    <button onclick="qrgenerator()">Generate</button>
+    
+    </div>
+    <div>
+      <img src="" id="qrimg">
+    </div>
+    <div>
+        <button id="sharebtn" onclick="shareqr()">Share</button>
+    </div>
+    <script>
+        let qrline=document.querySelector(".qrline")
+        let qrimg=document.getElementById("qrimg")
+        let btn=document.querySelector("button") 
+        let sharebtn=document.getElementById("sharebtn")
+        let qrlineValue=qrline.value.trim()
+        function qrgenerator()
+        {
+               qrlineValue=qrline.value.trim()
+            if(!qrlineValue){
+                alert("Please enter text or url")
+                  return
+            }else{
+
+            
+                qrimg.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+qrline.value
+            }           
+        
+    }
+        function shareqr(){
+          if(!qrlineValue){
+              alert('qr is not generated')
+            } 
+         else if(navigator.share){
+              qrurl="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+qrline.value 
+              navigator.share({
+                title:'QR code',
+                url:qrurl
+              }) 
+            }
+            
+             else{
+               alert("Browser is not suppourting")
+            }
+               
+        }
+    </script>
+</body>
+</html>
