@@ -3,6 +3,7 @@
 The QR Code Generator is a lightweight and user-friendly web application built using HTML, CSS, and JavaScript. It enables users to instantly convert any text or URL into a scannable QR code. Designed with simplicity and speed in mind, this tool is ideal for quickly sharing links, text snippets, contact info, or any other data that can be encoded into a QR format.
 
 **Key Features**
+
 🔹 Real-Time QR Code Generation
 
 Simply type or paste any text or URL into the input field, and the application automatically generates a corresponding QR code. No page refresh or additional action required.
