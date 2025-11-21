@@ -21,4 +21,4 @@ This project is a simple and efficient QR Code Generator built using HTML, CSS, 
 
 =>CSS3
 
-=>JavaScript (Vanilla JS)
+=>JavaScript 
