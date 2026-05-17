@@ -4,23 +4,23 @@ The QR Code Generator is a lightweight and user-friendly web application built u
 
 **Key Features**
 
-🔹 Real-Time QR Code Generation
+Real-Time QR Code Generation
 
 Simply type or paste any text or URL into the input field, and the application automatically generates a corresponding QR code. No page refresh or additional action required.
 
-🔹 Share QR Code Instantly
+Share QR Code Instantly
 
 The Share button allows users to quickly share the generated QR code image through supported platforms. This enhances usability and makes the app practical for everyday use.
 
-🔹 Responsive & Clean User Interface
+Responsive & Clean User Interface
 
 Designed with a clean layout and responsive structure, ensuring a smooth user experience across desktops, tablets, and mobile devices.
 
-🔹 Lightweight and Efficient
+Lightweight and Efficient
 
 Built without any heavy frameworks. Pure JavaScript handles all the logic, making the application fast, minimal, and easy to integrate into other projects.
 
-🔹 Error Handling 
+Error Handling 
 
 Includes basic input validation to ensure the QR code is generated only when the user provides valid text.
 
